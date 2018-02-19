@@ -76,11 +76,11 @@
         <tbody>
         <tr *ngFor="let result of results | async; let i = index;">
           <th scope="row">{{ i + 1}}</th>
-          <td>{{result[0]}}</td>
-          <td>{{result[1]}}</td>
-          <td>{{result[2]}}</td>
-          <td>{{result[3]}}</td>
-          <td>{{result[4]}}</td>
+          <td>{{result[0] | number : '1.2-2'}}</td>
+          <td>{{result[1] | number : '1.2-2'}}</td>
+          <td>{{result[2] | number : '1.2-2'}}</td>
+          <td>{{result[3] | number : '1.2-2'}}</td>
+          <td>{{result[4] | number : '1.2-2'}}</td>
         </tr>
         </tbody>
       </table>
